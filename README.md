@@ -1,12 +1,11 @@
-# phpBB-symbols
-This is a phpBB extension adding a convenient means to insert common symbols and accented characters into posts and PMs
+# phpBB-New-Topic-On-Index
 
-This extension adds a set of tabs to post/pm editing pages.
+This is a phpBB extension adding a "New Topic" button on the forum index page"
 
-The symbols tabs are added above the standard smilies table.
+The new button leads to a dropdown list of forums where the user has permission to make a new post.
 
 This version of the extension is designed for the Prosilver style and should be compatible with all styles that inherit from Prosilver.
 
-To install this extension, copy the directories and files to the /ext/v12mike/symbols/ directory of your phpBB installation and enable the 'Symbols' extension in the ACP customisation panel.
+To install this extension, copy the directories and files to the /ext/v12mike/newtopiconindex/ directory of your phpBB installation and enable the 'New Topic On Index' extension in the ACP customisation panel.
 
 This extension has no configurable items and no control panel.
