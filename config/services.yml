@@ -1,0 +1,10 @@
+services:
+    v12mike.newtopiconindex.listener:
+        class: v12mike\newtopiconindex\event\listener
+        arguments:
+            - '%core.root_path%'
+            - '%core.php_ext%'
+        tags:
+            - { name: event.listener }
+
+

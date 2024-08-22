@@ -1,0 +1,28 @@
+<!-- IF not S_IS_BOT -->
+<div class="actions-jump">
+
+	<!-- IF S_DISPLAY_JUMPBOX -->
+	<div class="jumpbox dropdown-container dropdown-container-left dropdown-down dropdown-{S_CONTENT_FLOW_BEGIN} dropdown-button-control" id="jumpbox">
+			<span title="{L_POST_TOPIC}" class="button dropdown-trigger dropdown-select">
+				<span>{L_BUTTON_NEW_TOPIC}</span> <i class="icon fa-pencil fa-fw" aria-hidden="true"></i>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<!-- BEGIN jumpbox_forums -->
+				<!-- IF jumpbox_forums.FORUM_ID neq -1 -->
+				<li><a href="{jumpbox_forums.LINK}" class="<!-- IF jumpbox_forums.level -->jumpbox-sub-link<!-- ELSEIF jumpbox_forums.S_IS_CAT -->jumpbox-cat-link<!-- ELSE -->jumpbox-forum-link<!-- ENDIF -->"><!-- BEGIN level --><span class="spacer"></span><!-- END level --> <span><!-- IF jumpbox_forums.level --><!-- IF S_CONTENT_DIRECTION eq 'rtl' -->&#8626;<!-- ELSE -->&#8627;<!-- ENDIF --> &nbsp;<!-- ENDIF --> {jumpbox_forums.FORUM_NAME}</span></a></li>
+				<!-- ENDIF -->
+				<!-- END jumpbox_forums -->
+			</ul>
+		</div>
+	</div>
+
+	<!-- ELSE -->
+	<br /><br />
+	<!-- ENDIF -->
+</div>
+<!-- ENDIF -->
+
+
